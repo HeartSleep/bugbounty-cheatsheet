@@ -1,4 +1,4 @@
-## Template Injection
+# 模板注入
 
 **Ruby**
 
@@ -8,7 +8,7 @@
 
 **Twig**
 
-The following payload should output `49`.
+回显 `49`.
 
 ```
 {{7*'7'}}
@@ -16,8 +16,9 @@ The following payload should output `49`.
 
 **Jinja**
 
-This payload should output `7777777`.
+回显 `7777777`.
 
 ```
 {{7*'7'}}
 ```
+

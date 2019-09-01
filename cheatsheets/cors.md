@@ -1,11 +1,11 @@
-## Cross Origin Resource Sharing (CORS)
+## 跨域资产共享 (CORS)
 
-Testing:
+测试:
 `curl --head -s 'http://example.com/api/v1/secret' -H 'Origin: http://evil.com'`
 
-Check to see what the server responds with in the `Access-Control-Allow-Origin:` (if anything) and if so, check if `Access-Control-Allow-Credentials: true` is present.
+检查服务器返回是否有 `Access-Control-Allow-Origin:`，如果有检查`Access-Control-Allow-Credentials: true`是否存在。
 
-If it is trusting arbitrary origins **with** allow-credentials set to true, then host this HTML as a proof of concept.
+如果它信任任意来源**并且** allow-credentials设置为true，那么将此HTML作为概念证明。
 
 ```
 <!DOCTYPE html>
@@ -34,3 +34,4 @@ function cors() {
 }
 </script>
 ```
+

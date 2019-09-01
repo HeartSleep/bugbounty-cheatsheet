@@ -1,4 +1,4 @@
-## Practice Platforms
+## 练习平台
 
 - [Pentesterlab](https://pentesterlab.com/)
 - [XSS Game](https://xss-game.appspot.com/)

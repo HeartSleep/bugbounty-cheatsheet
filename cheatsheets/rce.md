@@ -1,14 +1,14 @@
-## RCE
+## 远程命令执行
 
 **Werkzeug Debugger**
 
-Find somewhere where user input can be supplied and submit the following string to cause an error:
+找到可以提供用户输入的地方，并提交以下字符串以引起错误:
 
 ```
 strіng
 ```
 
-If the target is running their application in debug mode you might be able to run commands. If you are running the target locally, you can probably brute-force the debugger PIN. The debugger PIN is always in the following format: `***-***-***`.
+如果目标在调试模式下运行其应用程序，您可能能够运行命令。如果您在本地运行目标，您可能会强行使用调试器PIN。调试器引脚的格式总是:' ***-***-*** '。
 
 **Shellshock Bug**
 
@@ -19,3 +19,4 @@ If the target is running their application in debug mode you might be able to ru
 ```zsh
 curl -H "User-Agent: () { :; }; /bin/eject" http://example.com/
 ```
+

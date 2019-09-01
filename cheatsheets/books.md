@@ -1,19 +1,23 @@
-## Books
-**Web and browser**
-- [Web Hacking 101](https://leanpub.com/web-hacking-101) by Peter Yaworski.
+## 书籍
+**web和浏览器**
+
+- [Web Hacking 101](https://www.hacking8.com/web-hacking-101-zh/1.html) by Peter Yaworski.
 - [Breaking into Information Security: Learning the Ropes 101](https://leanpub.com/ltr101-breaking-into-infosec) by Andy Gill.
 - [The Web Application Hacker’s Handbook: Finding and Exploiting Security Flaws](https://www.amazon.com/Web-Application-Hackers-Handbook-Exploiting/dp/1118026470/) by Dafydd Stuttard and Marcus Pinto.
 - [Tangled Web](https://www.nostarch.com/tangledweb) by Michal Zalewski.
 - [OWASP Testing Guide v4](https://www.owasp.org/images/1/19/OTGv4.pdf) by OWASP Breakers community.
 
-**Mobile**
+**移动端**
+
 - [The Mobile Application Hacker's Handbook](https://www.amazon.com/Mobile-Application-Hackers-Handbook/dp/1118958500) by Dominic Chell et al.
 - [iOS Application Security: The Definitive Guide for Hackers and Developers](https://www.nostarch.com/iossecurity) by David Thiel.
 
-**Cryptography**
+**加密**
+
 - [Crypto 101](https://www.crypto101.io/) by Laurens Van Houtven.
 
-**Penetration Testing**
+**渗透测试**
+
 - [The Art of Exploitation by Jon Erickson, 2008](https://www.nostarch.com/hacking2.htm)
 - [Metasploit: The Penetration Tester's Guide by David Kennedy et al., 2011](https://www.nostarch.com/metasploit)
 - [Penetration Testing: A Hands-On Introduction to Hacking by Georgia Weidman, 2014](https://www.nostarch.com/pentesting)
@@ -30,3 +34,4 @@
 - [Advanced Persistent Threat Hacking: The Art and Science of Hacking Any Organization by Tyler Wrightson, 2014](http://www.amazon.com/Advanced-Persistent-Threat-Hacking-Organization/dp/0071828362)
 - [Bug Hunter's Diary by Tobias Klein, 2011](https://www.nostarch.com/bughunter)
 - [Advanced Penetration Testing by Wil Allsopp, 2017](https://www.amazon.com/Advanced-Penetration-Testing-Hacking-Networks/dp/1119367689/)
+

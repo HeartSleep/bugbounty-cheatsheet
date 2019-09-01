@@ -1,6 +1,6 @@
 ## XSLT Injection
 
-**Backend infos**
+**后端信息**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -12,7 +12,7 @@
 </html>
 ```
 
-**Injecting in PHP**
+**在php中注入**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

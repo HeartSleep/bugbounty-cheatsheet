@@ -1,4 +1,4 @@
-## Open Redirect
+## 开放的重定向
 
 ```
 /%09/google.com
@@ -32,7 +32,7 @@
 /\victim.com:80%40google.com
 ```
 
-## Possible open redirect parameters
+## 可能的开放重定向参数
 
 ```
 ?url=http://{target}
@@ -160,11 +160,11 @@
 
 
 
-**Open Redirect Payloads** by @cujanovic
+**重定向Payloads** by @cujanovic
 
 https://github.com/cujanovic/Open-Redirect-Payloads
 
-
-**Open Redirect Paramters** by @fuzzdb-project
+**重定向参数** by @fuzzdb-project
 
 https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/redirect/redirect-urls-template.txt
+

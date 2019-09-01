@@ -1,6 +1,6 @@
-## Bug Bounty Platforms
+## 漏洞赏金平台
 
-**Open For Signup**
+**开放注册**
 
 - [HackerOne](https://www.hackerone.com/)
 - [Bugcrowd](https://www.bugcrowd.com/)
@@ -12,8 +12,7 @@
 - [Hackerhive](https://hackerhive.io/)
 - [Hackenproof](https://hackenproof.com/)
 
-
-**Invite based Platforms**
+**邀请制平台**
 
 - [Synack](https://www.synack.com/red-team/)
 - [Cobalt](https://cobalt.io/)

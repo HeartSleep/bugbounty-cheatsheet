@@ -1,31 +1,32 @@
-## Bug Bounty Tips
+## 漏洞赏金 Tips
 
 **Tip #1**
 
-Use GIT as a recon tool. Find the target's GIT repositories, clone them, and then check the logs for information on the team not necessarily in the source code. Say the target is Reddit and I want to see which developers work on certain projects.
+使用GIT作为侦察工具。 找到目标的GIT存储库，`git clone it`，然后检查日志(`commit`或`log`)以获取有关团队的信息，而不必在源代码中查看。 假设目标是Reddit，我想看看哪些开发人员在某些项目上工作。
 
 [Link](https://gist.github.com/EdOverflow/a9aad69a690d97a8da20cd4194ca6596 )
 
 **Tip #2**
 
-Look for GitLab instances on targets or belonging to the target. When you stumble across the GitLab login panel, navigate to `/explore`. Misconfigured instances do not require authentication to view the internal projects. Once you get in, use the search function to find passwords, keys, etc. This is a pretty big attack vector and I am finally revealing it today, because I am sure it will help a lot of you get some critical issues.
+查找属于目标的GitLab实例。 当你偶然发现GitLab登录面板时，导航到`/ explore`。 配置错误的实例不需要身份验证即可查看内部项目。 一旦你进入，使用搜索功能来查找密码，密钥等。这是一个非常大的攻击媒介，我今天终于揭露它，因为我相信它会帮助你们很多人得到一些关键问题。
 
 **Tip #3**
 
 
-Bug bounty tip: test applications of a company that costs money or requires manual setup. Chances are only few to none would have tested it leaving it vulnerable. 
+Bug赏金提示：测试需要花钱或需要手动设置的公司的应用程序。 很少有人会测试它，漏洞可能性也很大。
 
 **Tip #4**
 
-If you’ve found an IDOR where you’re able to change data of others then don’t jump out of your seat to report it > modify it to XSS payload & if inputs are not sanitized & variables are echo’d without getting escaped then IDOR>XSS>ATO.
+如果您发现了IDOR，您可以在其中更改其他人的数据，那么请不要报告，将其修改为XSS有效负载，并且如果输入未被清理且变量被回应而不会被转义 然后IDOR> XSS> ATO。
 
 
 **Tip #5**
 
-Look for *hackathon-related* assets. What I mean by this is sometimes companies run hackathons and give attendees special access to certain API endpoints and/or temporary credentials. I have found GIT instances that were set up for Hackathons full of information that allowed me to find more issues in the target several times.
-
-
+寻找与黑客马拉松相关的资产。 我的意思是，有时公司会运行黑客马拉松并让与会者特别访问某些API端点和/或临时凭证。 我发现为Hackathons设置的端点充满了信息，这些信息允许我在目标中多次发现更多问题。
 
 **Tip #6**
 
-Keep all your directory brute force results so when a CVE like Drupalgeddon2 comes out, you can look for previously found instances (cat dirsearch/reports/*/* | grep INSTALL.mysql.txt | grep 200 | less)/
+保留所有目录暴力结果，以便当像Drupalgeddon2这样的CVE出来时，你可以查找以前找到的实例
+
+（cat dirsearch / reports / * / * | grep INSTALL.mysql.txt | grep 200 | less）/
+

@@ -10,13 +10,15 @@ curl https://certspotter.com/api/v0/certs\?domain\=example.com | jq '.[].dns_nam
 
 # Sublist3r One-liner
 
-This runs [Sublist3r](https://github.com/aboul3la/Sublist3r) on a list of domains and outputs the results in separate files.
+它在一个域列表上运行[Sublist3r](https://github.com/aboul3la/Sublist3r)，并在单独的文件中输出结果。
 
 ```
 . <(cat domains | xargs -n1 -i{} python sublist3r.py -d {} -o {}.txt)
 ```
 
 # [Apktool](https://ibotpeaches.github.io/Apktool/) to [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
+
+在apk中寻找链接
 
 ```
 apktool d app.apk; cd app;mkdir collection; find . -name \*.smali -exec sh -c "cp {} collection/\$(head /dev/urandom | md5 | cut -d' ' -f1).smali" \;; linkfinder -i 'collection/*.smali' -o cli

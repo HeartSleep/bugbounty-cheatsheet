@@ -1,4 +1,4 @@
-## Special Tools
+## 特殊工具
 
 **Resolution**
 
@@ -28,7 +28,7 @@ customer2.app.10.0.0.1.nip.io
 otherapp.10.0.0.1.nip.io
 ```
 
-**Reconnaissance**
+**探测**
 
 - https://dnsdumpster.com (DNS and subdomain recon)
 - [Reverse IP Lookup](http://reverseip.domaintools.com/) (Domainmonitor)
@@ -47,7 +47,7 @@ otherapp.10.0.0.1.nip.io
 
 
 
-**Report Templates**
+**报告模板**
 
 - https://github.com/fransr/template-generator
 - https://github.com/ZephrFish/BugBountyTemplates
