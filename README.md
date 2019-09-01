@@ -1,4 +1,5 @@
 # 漏洞赏金备忘录</h1>
+在线观看:https://www.hacking8.com/bugbounty-cheatsheet/cheatsheets/bugbountyplatforms.html
 
 | 📚 Reference                                       | 🔎 Vulnerabilities                                       |
 | ------------------------------------------------- | ------------------------------------------------------- |
